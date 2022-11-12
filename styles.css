@@ -1,0 +1,412 @@
+/**      - - - - - - - - - - - - Global Styles - - - - - - - - - - - -     */
+* {
+    box-sizing: border-box;
+    
+}
+
+html {
+    background-color: #020659;
+    
+}
+
+body {
+        max-width: 1000px;
+        margin: auto;
+}
+
+.more {
+    font-family: Raleway, Arial, Helvetica, sans-serif; 
+    font-weight: 700;
+    font-size: 14pt;
+    color: #ffffff;
+    margin: 20px;
+}
+
+h2 {
+    font-family: Raleway, Arial, Helvetica, sans-serif; 
+    font-weight: 700;
+    font-size: 20pt;
+    color: #590242;
+    padding: 10px 0 0 20px;
+}
+
+h1, h2, h3, dt, li~li {
+    text-transform: uppercase;
+}
+
+main, footer {
+    background-color: #ffffff;
+}
+
+a {
+   text-decoration: none; 
+   margin: 0;
+}
+
+button {
+    background-color: #590242;
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+}
+
+main {
+    padding: 25px 0 100px 0px;
+}
+
+button:hover {
+    background-color: #030A8C;
+}
+
+
+/*     - - - - - - - - - - - - Header Styles - - - - - - - - - - - -     */
+
+h1, #MuzakMaker {
+    font-family: Raleway, Arial, Helvetica, sans-serif; 
+    font-weight: 700;
+    font-size: 20pt;
+    color: #ffffff;
+}
+
+Header a, header p {
+    font-family: Raleway, Arial, Helvetica, sans-serif; 
+    font-weight: 400;
+    font-size: 16pt;
+    color: #ffffff;
+}
+
+Header a {
+    font-family: Raleway, Arial, Helvetica, sans-serif; 
+    font-weight: 400;
+    font-size: 14pt;
+    color: #ffffff;
+}
+
+header {
+    background-image: linear-gradient(to right, #2104D9 , black);
+    margin-top: 120px;
+    max-width: 100%;
+    padding: 10px 30px 10px 30px;
+    }
+#MuzakMaker {
+    font-variant: small-caps;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+li {
+    background-color: #030A8C;
+    padding: 10px 100px 10px 10px;
+    width: 100%;
+}
+
+li:hover {
+    background-color: #590242;
+}
+
+
+/*      - - - - - - - - - - - - Trending Styles - - - - - - - - - - - -     */
+#trending-section h2 {
+    margin-bottom: -5px ; 
+}
+
+dd {
+    font-family: Raleway, Arial, Helvetica, sans-serif; 
+    font-weight: 200;
+    font-size: 14pt;
+    color: #590242;
+    margin: 0;
+}
+
+dt {
+    font-family: Raleway, Arial, Helvetica, sans-serif; 
+    font-weight: 700;
+    font-size: 14pt;
+    color: #590242;
+    margin: 0 0 10px 0;
+}
+
+#trending {
+    display: flex;
+    overflow: auto;
+}
+
+#trending figure {
+    margin: -70px 10px 0 10px;
+}
+
+#trending figcaption {
+    background: rgba(255, 255, 255, 0.4);
+    position: relative;
+    left: 0px;
+    top: 328px;
+    padding: 1px 0px 10px 10px;
+    }
+
+audio {
+        position: relative;
+        color: rgba(255, 255, 255, 0.4); /** not working */
+        bottom: 210px;
+        left: 6px;
+}
+
+
+/*      - - - - - - - - - - - - Playlist Styles - - - - - - - - - - - -     */
+#playlists h3, #curated h3 {
+    font-family: Raleway, helvetica, sans-serif; 
+    font-weight: 700;
+    font-size: 16pt;
+    color: #ffffff;
+}
+
+#playlists p, #curated p {
+    font-family: Raleway, helvetica, sans-serif; 
+    font-weight: 400;
+    font-size: 14pt;
+    color: #ffffff;
+}
+
+#playlists {
+    background-color: #2699FB;
+    display: flex;
+    overflow: auto;
+    gap: 10px;
+}
+
+#curated {
+    background-color:#030A8C;
+    display: flex;
+    overflow: auto;
+    gap: 10px;
+}
+
+#playlists figure {
+    background-color: #0D8DFB;
+    padding: 10px;
+}
+
+#curated figure {
+    background-color: #020659;
+    padding: 10px;
+}
+
+#playlists figure, #curated figure {
+    margin: 0px 10px 0 10px;
+}
+
+#playlists figure:hover, #curated figure:hover {
+    background-color: #590242;
+}
+
+#all-playlists figcaption {
+    text-align: center;
+}
+
+/*      - - - - - - - - - - - - Footer Styles - - - - - - - - - - - -     */
+footer {
+    font-family: Raleway, Arial, Helvetica, sans-serif; 
+    font-weight: 700;
+    font-size: 10pt;
+    color: #590242;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+/*      - - - - - - - - - - - - Menu Styles - - - - - - - - - - - -  */
+
+ul {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+    position: fixed;
+    top: 0px;
+    left: 10px;
+}
+
+label span {
+    background-color: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out;
+    width: 18px;
+}
+
+label span:before, label span:after {
+    background: #ffffff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+label span:before {
+    top: 5px;
+}
+
+label span:after {
+    top: -5px;
+}
+
+input {
+    display: none;
+
+}
+
+input:checked ~ ul {
+    max-height: 500px;
+}
+
+input:checked ~ label span {
+    background: transparent;
+}
+
+input:checked ~ label span:before {
+    transform: rotate(-45deg);
+}
+input:checked ~ label span:after {
+    transform: rotate(45deg);
+}
+
+input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0;
+}
+
+
+/**      - - - - - - - - - - - - Audio Styles - - - - - - - - - - - -     */
+
+audio::-webkit-media-controls-mute-button {
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+
+audio::-webkit-media-controls-enclosure {
+    background: rgba(255, 255, 255, 0.4)
+}
+
+
+/**      - - - - - - - - - - - - Scroll Styles - - - - - - - - - - - -     */
+
+#trending::-webkit-scrollbar {
+    height: 15px;
+}
+
+#trending::-webkit-scrollbar-track {
+    background: #c4adbe; /*needs radial gradient, and vertical scroll gone*/
+}
+
+#trending::-webkit-scrollbar-thumb {
+    background: #590242;
+    border-radius: 5px;
+}
+
+#trending::-webkit-scrollbar-thumb:hover {
+    background: #020659;
+}
+
+
+#playlists::-webkit-scrollbar, #curated::-webkit-scrollbar {
+    height: 15px;
+}
+
+#playlists::-webkit-scrollbar-track, #curated::-webkit-scrollbar-track  {
+    background: #0D8DFB;
+}
+
+#playlists::-webkit-scrollbar-thumb, #curated::-webkit-scrollbar-thumb {
+    background: #020659;
+    border-radius: 5px;
+}
+
+#playlists::-webkit-scrollbar-thumb:hover, #curated::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+
+/*      - - - - - - - - - - - - Responsive Styles - - - - - - - - - - - -   */
+
+/*      * * * * * *  Responsive: Header  * * * * * *    */
+@media screen and (min-width:834px) {
+    ul {
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding: 0;
+    }
+
+    li {
+        padding: 45px 51px 31px 50px;
+    }
+
+    label span, input {
+        display: none;
+    }
+
+    nav {
+        position: relative;
+        top: -287px;
+        left: -30px;
+    }
+
+    /*      * * * * * *  Responsive: Main  * * * * * *    */
+    #playlists, #curated {
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        gap: 10px;
+        max-height: 500px;
+        width: fit-content;
+    }
+   
+    #all-playlists {
+            display:flex;
+    }
+
+    #playlists figcaption, #curated figcaption {
+        position: relative;
+        left: 150px;
+        top: -130px;
+        overflow-wrap:break-word;
+        width: 280px;
+    }
+
+    #playlists figure, #curated figure {
+        width: 460px;
+        height: 140px;
+     }
+
+    #all-playlists button {
+        position: relative;
+        left: 310px;
+    }
+}
