@@ -88,9 +88,13 @@ header {
     max-width: 100%;
     padding: 10px 30px 10px 30px;
     }
+
 #MuzakMaker {
     font-variant: small-caps;
-}
+    position: absolute;
+    left: 100px;
+    top: 15px;
+    }
 
 a {
     text-decoration: none;
@@ -100,14 +104,17 @@ ul {
     list-style: none;
 }
 
-    nav {
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
+nav {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 700px;
+    padding-top: 20px;
+    padding-left: 52px;
+}
 
 li {
-    background-color: #030A8C;
+    background-color:  #020659;
     padding: 10px 100px 10px 10px;
     width: 100%;
 }
@@ -296,6 +303,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 }
 
 
+
 /**      - - - - - - - - - - - - Audio Styles - - - - - - - - - - - -     */
 
 audio::-webkit-media-controls-mute-button {
@@ -365,7 +373,9 @@ audio::-webkit-media-controls-enclosure {
     }
 
     li {
-        padding: 45px 51px 31px 50px;
+        position: relative;
+        left: -100px;
+        top: -260px;
     }
 
     label span, input {
@@ -374,8 +384,26 @@ audio::-webkit-media-controls-enclosure {
 
     nav {
         position: relative;
-        top: -287px;
-        left: -30px;
+        top: 0px;
+        left: 0;
+    }
+
+    #MuzakMaker {
+        position: relative;
+        left: 37px;
+        top: 0;
+    }
+
+    li~li { 
+        position: relative;
+        left: -100px;
+        top: -260px;
+    }
+
+    ul:first-child {
+        position: relative;
+        top: -260px;
+        left: -67px;
     }
 
     /*      * * * * * *  Responsive: Main  * * * * * *    */
